@@ -1,0 +1,24 @@
+{
+  "name": "street-havoc-16",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "art": "node tools/art/generate.mjs",
+    "art:preview": "node tools/art/generate.mjs --preview",
+    "typecheck": "tsc --noEmit",
+    "qa": "node tests/qa.mjs",
+    "screenshots": "node tests/screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  }
+}
